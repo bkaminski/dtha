@@ -1,2 +1,2 @@
-# dtha
-Custom WordPress theme design
+# integrity-sound
+Custom WordPress Theme for Integrity Sound Solutions
