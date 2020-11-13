@@ -39,6 +39,13 @@ if ( is_array( $plugins ) ) {
 } else {
 	return array();
 }}
+//Remove Gutenberg Block Library CSS from loading on the frontend
+function smartwp_remove_wp_block_library_css(){
+ wp_dequeue_style( 'wp-block-library' );
+ wp_dequeue_style( 'wp-block-library-theme' );
+ wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
+}
+add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 //REMOVE THE TYPE ATTRIBUTE FROM JAVASCRIPT FILES
 add_action('wp_loaded', 'prefix_output_buffer_start');
 function prefix_output_buffer_start() { 
@@ -82,15 +89,38 @@ remove_action( 'wp_head', 'rest_output_link_wp_head');
 remove_action( 'wp_head', 'wp_oembed_add_discovery_links');
 remove_action( 'template_redirect', 'rest_output_link_header', 11);
 //REMOVE WP VERSION FROM CODE
-function intSound_remove_version() {
+function dtha_remove_version() {
 return '';
 }
-add_filter('the_generator', 'intSound_remove_version');
+add_filter('the_generator', 'dtha_remove_version');
 //REMOVE YOAST SEO COMMENTS
 if (defined('WPSEO_VERSION')) {
  add_action('wp_head',function() { ob_start(function($o) {
  return preg_replace('/^\n?<!--.*?[Y]oast.*?-->\n?$/mi','',$o);
  }); },~PHP_INT_MAX);
 }
-//AUTO UPDATE PLUGINS
-add_filter( 'auto_update_plugin', '__return_true' );
+
+//** *Enable upload for webp image files.*/
+function webp_upload_mimes($existing_mimes) {
+    $existing_mimes['webp'] = 'image/webp';
+    return $existing_mimes;
+}
+add_filter('mime_types', 'webp_upload_mimes');
+//** * Enable preview / thumbnail for webp image files.*/
+function webp_is_displayable($result, $path) {
+    if ($result === false) {
+        $displayable_image_types = array( IMAGETYPE_WEBP );
+        $info = @getimagesize( $path );
+
+        if (empty($info)) {
+            $result = false;
+        } elseif (!in_array($info[2], $displayable_image_types)) {
+            $result = false;
+        } else {
+            $result = true;
+        }
+    }
+
+    return $result;
+}
+add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);

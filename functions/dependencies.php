@@ -13,3 +13,23 @@ function enqueue_dtha_styles() {
     wp_enqueue_style('dtha-styles', get_template_directory_uri() . '/assets/styles/siteStyles.min.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_dtha_styles');
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/functions/class-wp-bootstrap-navwalker.php';
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'hepaware' ),
+));
+// Nav Walker
+
+//ACF CUSTOM
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Global Theme Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'dtha-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+}
