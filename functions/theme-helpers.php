@@ -76,12 +76,19 @@ function vc_remove_wp_ver_css_js( $src ) {
 add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 //BEGIN READ MORE BUTTON ON TAGS AND BLOG
-function excerpt_read_more_link($output)
-{
-    global $post;
-    return $output . '<a class="btn btn-lg btn-success text-uppercase" href="' . get_permalink() . '">Read More <i class="fas fa-angle-double-right fa-fw fa-lg"></i></a>';
+//function excerpt_read_more_link($output)
+//{
+//    global $post;
+//    return $output . '<a class="btn btn-green rounded-0" href="' . get_permalink() . '">Read More</a>';
+//}
+//add_filter('the_excerpt', 'excerpt_read_more_link');
+
+function wpse_230169_excerpt_more($more) {
+    return '';
 }
-add_filter('the_excerpt', 'excerpt_read_more_link');
+add_filter('excerpt_more', 'wpse_230169_excerpt_more');
+
+
 //REMOVE COMMENTS FEED RSS
 add_filter( 'feed_links_show_comments_feed', '__return_false' );
 //REMOVE JSON API

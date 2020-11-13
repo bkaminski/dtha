@@ -22,4 +22,14 @@
 
 	</section>
 
+	<section>
+		<?php get_template_part('parts/home', 'jockey-blog-posts'); ?>
+
+	</section>
+
+	<section>
+		<?php get_template_part('parts/home', 'image-blocks'); ?>
+
+	</section>
+
 <?php get_footer(); ?>
