@@ -1,5 +1,5 @@
 <footer class="footer">
-	<div class="container">
+	<div class="container pt-3">
 		<div class="row">
 			<div class="col-md-6">
 				<?php
@@ -14,7 +14,7 @@
 						'walker'            => new WP_Bootstrap_Navwalker(),
 				)); ?>
 				<figure>
-					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/DTHA-logo-2-1.webp' ) . '" class="img-fluid" alt="Delaware Thoroughbread Horsemens Association">';?>
+					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/DTHA-logo-2.webp' ) . '" class="img-fluid" alt="Delaware Thoroughbread Horsemens Association">';?>
 						
 				</figure>
 			</div>
