@@ -19,6 +19,7 @@ require_once get_template_directory() . '/functions/class-wp-bootstrap-navwalker
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'dtha' ),
     'footer_menu' => __( 'Footer Menu', 'dtha'),
+    'dctp_menu' => __('DCTP Menu', 'dtha'),
 ));
 // Nav Walker
 
