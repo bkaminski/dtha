@@ -34,7 +34,7 @@
 					<p class="card-text"><?php the_field('card_3_text'); ?></p>
 				</div>
 				<div class="card-footer text-center">
-					<a href="#" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">Read On</a>
+					<a href="news" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">Read On</a>
 				</div>
 			</div>
 		</div>

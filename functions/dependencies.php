@@ -35,3 +35,12 @@ if( function_exists('acf_add_options_page') ) {
     ));
     
 }
+
+//Widgets
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+    'before_widget' => '',
+    'after_widget' => '',
+    'before_title' => '',
+    'after_title' => '',
+));

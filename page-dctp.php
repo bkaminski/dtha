@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-3 pt-0">
 					<a href="<?php echo get_home_url(); ?>/dctp">
-					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/dctp-logo.png' ) . '" class="img-fluid" width="70" alt="Delaware Certified Thoroughbred Program">';?>
+					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/dctp-logo.png' ) . '" class="float-right img-fluid" width="70" alt="Delaware Certified Thoroughbred Program">';?>
 					</a>
 				</div>
 				<div class="col-9">
@@ -24,22 +24,7 @@ get_header(); ?>
 	<div class="container dctp-container">
 		<div class="row">
 			<div class="col-lg-3 pb-5">
-				<nav class="navbar navbar-expand navbar-light bg-light">
-					<div class="collapse navbar-collapse" id="dctpNavbar">
-						<?php
-						wp_nav_menu( array(
-							'theme_location'    => 'dctp_menu',
-							'depth'             => 2,
-							'container'         => '',
-							'container_class'   => '',
-							'container_id'      => '',
-							'menu_class'        => 'nav flex-column',
-							'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-							'walker'            => new WP_Bootstrap_Navwalker(),
-						)); ?>
-							
-					</div>
-				</nav>
+				<?php bellows( 'main' , array( 'theme_location' => 'dctp_menu' ) ); ?>
 			</div>
 			<div class="col-lg-9">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -1,6 +1,12 @@
 body {
 	padding-top: 80px;
 }
+a:link {
+	outline: none;
+}
+a:hover {
+	text-decoration: none;
+}
 .no-padding {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -11,28 +17,64 @@ body {
 	background: #ccc;
 }
 .racing-calendar {
+	display: block;
 	background-color: rgb(0, 112, 58);
 	min-height: 235px;
 	color: #fff;
 	padding: 50px 50px 25px 70px;
+	transition: 0.3s ease-in-out;
+		&:hover {
+			background-color: #02964f;
+		}
 }
 .racing-results {
 	background-color: rgb(255, 209, 92);
 	min-height: 235px;
 	color: #fff;
 	padding: 50px 50px 25px 70px;
+	display: block;
+	transition: 0.3s ease-in-out;
+		&:hover {
+			background-color: #dab453;
+		}
 }
 .what-we-do {
 	background-color: rgb(133, 24, 104);
 	min-height: 235px;
 	color: #fff;
 	padding: 50px 50px 25px 70px;
+	display: block;
+	transition: 0.3s ease-in-out;
+		&:hover {
+			background-color: #61124c;
+		}
 }
 .contact-us {
 	background-color: #000;
 	min-height: 235px;
 	color: #fff;
 	padding: 50px 50px 25px 70px;
+	display: block;
+	transition: 0.3s ease-in-out;
+		&:hover {
+			background-color: #333;
+		}
+}
+.racing-calendar-foot {
+	background-color: rgb(0, 112, 58);
+	height: 4px;
+}
+.racing-results-foot {
+	background-color: rgb(255, 209, 92);
+	height: 4px;
+}
+.what-we-do-foot {
+	background-color: rgb(133, 24, 104);
+	height: 4px;
+}
+.contact-us-foot {
+	background-color: #000;
+	height: 4px;
 }
 .quick-links {
 	width: 100%;

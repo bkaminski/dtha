@@ -1,5 +1,6 @@
+<?php get_template_part('parts/page', 'footer-border'); ?>
 <footer class="footer">
-	<div class="container pt-3">
+	<div class="container pt-3 pb-5">
 		<div class="row">
 			<div class="col-md-6">
 				<?php
