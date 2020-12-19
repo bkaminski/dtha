@@ -15,7 +15,7 @@
 				<a target="_blank" class="btn btn-lg btn-green btn-block rounded-0" href="<?php the_field('link_4_link'); ?>"><?php the_field('link_4_text'); ?></a>
 			</div>
 			<div class="col-lg pb-3">
-				<a target="_blank" class="btn btn-lg btn-green btn-block rounded-0" href="<?php the_field('link_5_link'); ?>"><?php the_field('link_5_text'); ?></a>
+				<a class="btn btn-lg btn-green btn-block rounded-0" href="<?php the_field('link_5_link'); ?>"><?php the_field('link_5_text'); ?></a>
 			</div>
 		</div>
 		<div class="row pb-3">

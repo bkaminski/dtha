@@ -15,7 +15,7 @@
 						'walker'            => new WP_Bootstrap_Navwalker(),
 				)); ?>
 				<figure>
-					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/DTHA-logo-2.webp' ) . '" class="img-fluid" alt="Delaware Thoroughbread Horsemens Association">';?>
+					<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/12/1479479957.png' ) . '" class="img-fluid" alt="Delaware Thoroughbread Horsemens Association">';?>
 						
 				</figure>
 			</div>
@@ -29,8 +29,8 @@
 					<a type="submit" class="btn btn-green-sm rounded-0 mb-2">Subscribe Now</a>
 				</form>
 				<ul class="list-inline pt-2 float-right mr-5" style="color:#ccc;">
-					<li class="list-inline-item pr-3"><i class="fab fa-facebook-f fa-2x"></i></li>
-					<li class="list-inline-item"><i class="fab fa-twitter fa-2x"></i></li>
+					<li class="list-inline-item pr-3"><a target="_blank" href="https://www.facebook.com/Friends-of-Delaware-Horse-Racing-169800933046892"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+					<li class="list-inline-item"><a target="_blank" href="https://twitter.com/dtha_bessie"><i class="fab fa-twitter fa-2x"></i></a></li>
 				</ul>
 			</div>
 		</div>

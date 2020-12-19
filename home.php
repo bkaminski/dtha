@@ -22,5 +22,9 @@
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
 	</div>
+	<div class="col">
+		<?php echo dtha_pagination(); ?>
+			
+	</div>
 </div>
 <?php get_footer(); ?>

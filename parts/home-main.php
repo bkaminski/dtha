@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	<div class="row row-eq-height">
 		<div class="col-md-3 no-padding">
-			<a href="#">
+			<a href="https://www.dtha.com/live-racing-calendar-off-season/">
 				<div class="racing-calendar h-100">
 					<h2 class="text-uppercase h5 font-weight-bold pb-3">Live Racing Calendar</h2>
 					<p>Click here for our 2021 Live Racing Calendar.</p>
@@ -10,7 +10,7 @@
 			</a>
 		</div>
 		<div class="col-md-3 no-padding">
-			<a href="#">
+			<a target="_blank" href="https://www.equibase.com/static/chart/summary/DEL-calendar.html">
 				<div class="racing-results h-100">
 					<h2 class="text-uppercase h5 font-weight-bold pb-3">Results</h2>
 					<p>Click here to review a summary of racing statistics.</p>
@@ -19,7 +19,7 @@
 			</a>
 		</div>
 		<div class="col-md-3 no-padding">
-			<a href="#">
+			<a href="<?php echo get_home_url(); ?>/about-dtha">
 				<div class="what-we-do h-100">
 					<h2 class="text-uppercase h5 font-weight-bold pb-3">What We Do</h2>
 					<p>Learn about how the Association and it's Board of Directors represent you, the horseman, the owners/trainers.</p>
