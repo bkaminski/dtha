@@ -21,13 +21,9 @@
 			</div>
 			<div class="col-md-6">
 				<p class="text-green pt-2">Subscribe to our newsletter</p>
-				<form class="form-inline">
-					<div class="form-group mb-2">
-						<label for="subscribeEmail" class="sr-only">Email Address</label>
-						<input type="email" class="form-control rounded-0 mr-4" id="subscribeEmail" placeholder="Enter your email address">
-					</div>
-					<a type="submit" class="btn btn-green-sm rounded-0 mb-2">Subscribe Now</a>
-				</form>
+				
+				<?php echo do_shortcode('[mc4wp_form id="872"]'); ?>
+
 				<ul class="list-inline pt-2 float-right mr-5" style="color:#ccc;">
 					<li class="list-inline-item pr-3"><a target="_blank" href="https://www.facebook.com/Friends-of-Delaware-Horse-Racing-169800933046892"><i class="fab fa-facebook-f fa-2x"></i></a></li>
 					<li class="list-inline-item"><a target="_blank" href="https://twitter.com/dtha_bessie"><i class="fab fa-twitter fa-2x"></i></a></li>

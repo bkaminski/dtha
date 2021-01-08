@@ -1,10 +1,10 @@
 <div class="container-fluid">
 	<div class="row row-eq-height">
 		<div class="col-md-3 no-padding">
-			<a href="https://www.dtha.com/live-racing-calendar-off-season/">
+			<a href="<?php echo get_home_url(); ?>/dctp/forms-and-fees/">
 				<div class="racing-calendar h-100">
-					<h2 class="text-uppercase h5 font-weight-bold pb-3">Live Racing Calendar</h2>
-					<p>Click here for our 2021 Live Racing Calendar.</p>
+					<h2 class="text-uppercase h5 font-weight-bold pb-3">DCTP</h2>
+					<p>Click here for DCTP Information.</p>
 					<p><i class="fas fa-arrow-right fa-2x"></i></p>
 				</div>
 			</a>

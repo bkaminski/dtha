@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow">
 	<div class="container-fluid">
 		<a class="navbar-brand order-md-last" href="<?php echo get_home_url(); ?>">
-			<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/DTHA-logo-233.webp' ) . '" class="img-fluid" width="310" alt="Delaware Thoroughbread Horsemens Association">';?>
+			<?php $uploads = wp_upload_dir(); echo '<img src="' . esc_url( $uploads['baseurl'] . '/2020/11/DTHA-logo-233.webp' ) . '" class="img-fluid" width="275" alt="Delaware Thoroughbread Horsemens Association">';?>
 	                		
 	    </a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dthaNavbar" aria-controls="dthaNavbar" aria-expanded="false" aria-label="Toggle navigation">

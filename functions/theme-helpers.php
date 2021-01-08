@@ -178,3 +178,17 @@ function dtha_pagination($pages = '', $range = 1)
     }
 }
 //end pagination
+
+//REMOVE YOAST SEO COMMENTS
+add_filter( 'wpseo_debug_markers', '__return_false' );
+
+//Change WP Emails and email address away from "WordPress" as sender
+function dtha_mail_name( $email ){
+  return 'DTHA'; // new email name from sender.
+}
+add_filter( 'wp_mail_from_name', 'dtha_mail_name' );
+
+function dtha_mail_from ($email ){
+  return 'noreply@dtha.com'; // new email address from sender.
+}
+add_filter( 'wp_mail_from', 'dtha_mail_from' );
