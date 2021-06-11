@@ -10,7 +10,7 @@
 					<p class="card-text"><?php the_field('card_1_text'); ?></p>
 				</div>
 				<div class="card-footer text-center">
-					<a href="#" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">Learn More</a>
+					<a href="<?php echo the_field('card_1_button_url');?>" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">Learn More</a>
 				</div>
 			</div>
 			<div class="card rounded-0">
@@ -22,7 +22,7 @@
 					<p class="card-text"><?php the_field('card_2_text'); ?></p>
 				</div>
 				<div class="card-footer text-center">
-					<a href="#" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">View Schedule</a>
+					<a href="<?php echo the_field('card_2_button_url');?>" class="btn btn-lg btn-yellow rounded-0 pr-3 pl-3">View Schedule</a>
 				</div>
 			</div>
 			<div class="card rounded-0">
